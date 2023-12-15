@@ -145,6 +145,15 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
     - Access Jenkins in a web browser using the public IP of your EC2 instance.
         
         publicIp:8080
+      
+    #check jenkins status after installation
+    ```bash
+     sudo service jenkins status
+    ```
+    
+    - Then go to url with defined port for jenkins and obtain the path to view the          Admin password.
+
+    sudo cat {path}
         
 2. **Install Necessary Plugins in Jenkins:**
 
